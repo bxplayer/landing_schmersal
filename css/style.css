@@ -103,6 +103,9 @@ main{
     padding-left: 0px;    
 }
 
+.form-select option{
+    padding: 5px;
+}
 
 
 
