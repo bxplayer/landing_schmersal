@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+
+:root{
+    --background-form:#EEEEEE;
+    --color-text-form:#999999;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+
+main{
+    background: rgb(234,234,234);
+background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 28%);
+    z-index: 10;
+    max-width: 99vw;    
+}
+
+
+
+.formulario{
+    min-height: 750px;
+}
+
+.top-carousel > div{
+    z-index: 20;
+}
+
+.top-carousel .card{
+    width:460px;
+}
+
+.top-carousel p{
+    font-size: 2rem; 
+}
+
+
+.lema-dinatecnica,.distribuidor-oficial,.productos-schmersal{
+    min-height: 500px;
+}
+
+
+
+
+
+.distribuidor-oficial p{
+    font-size: 2.33rem;    
+}
+
+.distribuidor-oficial p b{
+    font-weight: 600;
+}
+
+
+.productos-schmersal{
+    background-color: #F7F7F7;
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+}
+.productos-schmersal p{
+    font-size: 2.33rem;
+    height: 99%;
+}
+
+.productos-schmersal p b{
+    font-weight: 400;
+}
+
+
+
+.lema-dinatecnica p{
+    color:#4371B0;
+    font-size: 2.33rem;
+}
+
+.lema-dinatecnica p b{
+    font-weight: 600;
+}
+
+
+
+
+.logo-dinatecnica img{
+    max-width: 505px;
+    max-height: 90px;        
+}
+
+
+.form-select ,.form-control , .input-group-text{
+    background-color: var(--background-form);
+    color:var(--color-text-form);
+    height: 45px;    
+    margin-top: 20px;
+}
+
+.form-select, .form-control{
+    border-left: none;
+    padding-left: 0px;    
+}
+
+
+
+
+
+#carousel{
+    position: absolute;
+    height: 800px;
+    width: 99vw;
+    margin-bottom: 0px;
+}
+
+#carousel .carousel-item, #carousel .carousel-item img{
+    width: 99vw;
+    height: 800px;
+}
+
+
+.degrade{
+    background: rgb(14,0,0);
+    background: linear-gradient(90deg, rgba(14,0,0,0.7) 0%, rgba(0,0,37,0.9) 100%);
+    z-index: 10;
+    height: 800px;
+    width: 99vw;
+    position: absolute;
+}
+
+
+#carousel_bottom .carousel-item, #carousel_bottom .carousel-item img{
+    height: 830px;
+    width: 99vw;
+}
+
+.carousel-caption{
+    width: 890px;
+    height: 195px;
+    padding-left: 20px;
+    left:5%;
+    background-color: rgba(0,0,0,57%);
+}
+
+.carousel-caption h2{
+    font-size: 2.8rem;
+}
+
+.carousel-caption p{
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+
+
+
+@media (max-width: 576px) {
+    .lema-dinatecnica p,.distribuidor-oficial p,.productos-schmersal p {        
+        font-size: 1.8rem;
+    }
+  }
+
+  @media (min-width: 768px)  and  (max-width: 991px) {
+     .top-carousel .card{
+         width: 350px;         
+      }
+
+  }
+
+
+
+
+
+/* 
+
+
+.carousel-form-container{
+    margin: 0 auto;
+    position: absolute;
+    z-index: 10;
+}
+
+.carousel-form-container > img{
+    width: 600px;
+    height: 213px;
+} */
