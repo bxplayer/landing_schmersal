@@ -51,6 +51,10 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 28%);
     font-weight: 600;
 }
 
+.logo-dinatecnica img{
+    width: 99%;
+}
+
 
 .productos-schmersal{
     background-color: #F7F7F7;
@@ -149,16 +153,42 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 28%);
 
 
 @media (max-width: 576px) {
+    
     .lema-dinatecnica p,.distribuidor-oficial p,.productos-schmersal p,.top-carousel p {        
         font-size: 1.8rem;
     }
     .top-carousel .card{
-        width: 100vw;         
+        background-color: blue;
+        width: 99%;         
      }
+
+    #carousel_bottom .carousel-item, #carousel_bottom .carousel-item img{
+        height: 230px;
+        width: 99vw;
+    }
+
+    .carousel-caption{  
+        top : 60%;
+        padding: 2%;      
+        height: 85px;
+        padding-left: 20px;
+        left:5%;
+        background-color: rgba(0,0,0,57%);
+    }
+    
+    .carousel-caption h2{
+        font-size: 1.4rem;
+    }
+    
+    .carousel-caption p{
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
   }
 
   @media (min-width: 768px)  and  (max-width: 991px) {
-     .top-carousel .card{
+     .top-carousel .card{         
          width: 350px;         
       }
 
