@@ -153,7 +153,10 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 28%);
 
 
 @media (max-width: 576px) {
-    
+    html, body {
+        overflow-y: hidden;
+      }
+
     .lema-dinatecnica p,.distribuidor-oficial p,.productos-schmersal p,.top-carousel p {        
         font-size: 1.8rem;
     }
