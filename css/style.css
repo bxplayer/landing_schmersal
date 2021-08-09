@@ -33,7 +33,7 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 28%);
     width:460px;
 }
 
-.top-carousel p{
+{
     font-size: 2rem; 
 }
 
@@ -42,13 +42,10 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 28%);
     min-height: 500px;
 }
 
-
-
-
-
-.distribuidor-oficial p{
-    font-size: 2.33rem;    
+.lema-dinatecnica p,.distribuidor-oficial p,.productos-schmersal p,.top-carousel p{
+    font-size: 2.33rem;  
 }
+
 
 .distribuidor-oficial p b{
     font-weight: 600;
@@ -61,7 +58,6 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 28%);
     border-bottom: 1px solid #DDDDDD;
 }
 .productos-schmersal p{
-    font-size: 2.33rem;
     height: 99%;
 }
 
@@ -73,7 +69,6 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 28%);
 
 .lema-dinatecnica p{
     color:#4371B0;
-    font-size: 2.33rem;
 }
 
 .lema-dinatecnica p b{
@@ -154,9 +149,12 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 28%);
 
 
 @media (max-width: 576px) {
-    .lema-dinatecnica p,.distribuidor-oficial p,.productos-schmersal p {        
+    .lema-dinatecnica p,.distribuidor-oficial p,.productos-schmersal p,.top-carousel p {        
         font-size: 1.8rem;
     }
+    .top-carousel .card{
+        width: 100vw;         
+     }
   }
 
   @media (min-width: 768px)  and  (max-width: 991px) {
