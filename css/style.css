@@ -159,6 +159,11 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 28%);
   }
 
   @media (min-width: 768px)  and  (max-width: 991px) {
+    .lema-dinatecnica p,.distribuidor-oficial p,.productos-schmersal p,.top-carousel p {     
+        color:red;   
+        font-size: 1.8rem;
+    }
+    
      .top-carousel .card{
          width: 350px;         
       }
