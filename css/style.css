@@ -14,27 +14,31 @@ body{
 
 main{
     background: rgb(234,234,234);
-background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 28%);
-    z-index: 10;
-    max-width: 99vw;    
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 28%);
+    z-index: 10;      
+}
+
+.container-fluid{
+    padding: 0px;
 }
 
 
 
+/*Distribuidor oficial*/
+
+/*FinDistribuidor oficial*/
+
+
+.top-carousel .card{         
+    width: 450px;         
+ }
+
 .formulario{
-    min-height: 750px;
+    min-height: 750px;    
 }
 
 .top-carousel > div{
     z-index: 20;
-}
-
-.top-carousel .card{
-    width:460px;
-}
-
-{
-    font-size: 2rem; 
 }
 
 
@@ -157,10 +161,13 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 28%);
     .lema-dinatecnica p,.distribuidor-oficial p,.productos-schmersal p,.top-carousel p {        
         font-size: 1.8rem;
     }
+
     .top-carousel .card{
         background-color: blue;
         width: 99%;         
      }
+
+ 
 
     #carousel_bottom .carousel-item, #carousel_bottom .carousel-item img{
         height: 230px;
@@ -188,9 +195,14 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 28%);
   }
 
   @media (min-width: 768px)  and  (max-width: 991px) {
-     .top-carousel .card{         
-         width: 350px;         
-      }
+    .top-carousel .card{         
+       background-color: red;
+       width: 99%;      
+    } 
+
+    .lema-dinatecnica p,.distribuidor-oficial p,.productos-schmersal p,.top-carousel p{
+        font-size: 1.90rem;  
+    }
 
   }
 
