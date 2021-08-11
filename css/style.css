@@ -40,7 +40,7 @@ main{
 }
 
 
-.card{         
+.card{             
     width: 450px;         
 }
 
@@ -206,13 +206,25 @@ main{
 
 
 
-.whatsapp{    
+.whatsapp_fixed{
+    
+    position: fixed;    
+}
+
+
+.whatsapp{
+    right: 30px;
+    bottom: 30px;
     background-color: white;
     border-radius: 5px;
     padding: 25px;
     width: 310px;
-    height: 324px;
+    height: 324px;    
+    z-index: 99;        
 }
+
+
+
 
 .whatsapp h3{
     color:#42AB46;

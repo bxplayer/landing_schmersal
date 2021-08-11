@@ -108,3 +108,21 @@ if(exito){
 
     modal.show();
 }
+
+
+
+
+
+let myID = document.getElementById("whatsapp");
+
+var myScrollFunc = function () {
+    var y = window.scrollY;
+    if (y >= 2200) {
+        myID.classList.remove("whatsapp_fixed");        
+       
+    } else {        
+        myID.classList.add("whatsapp_fixed");        
+    }
+};
+
+window.addEventListener("scroll", myScrollFunc);
