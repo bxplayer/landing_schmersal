@@ -292,8 +292,12 @@ footer a{
 
 @media (min-width: 268px) and (max-width: 576px) {
 
-    /* .mobile_link_hide{
-        display: inline;
+    .mobile_link_show{
+        display: block;
+    }
+
+    .mobile_link_hide{
+        display: none;
     }
 
     .mobile_link{
@@ -305,7 +309,7 @@ footer a{
 
     .mobile_link img{
         width: 70%;
-    } */
+    } 
 
     .whatsapp_fixed{
         position: relative;

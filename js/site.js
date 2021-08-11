@@ -125,9 +125,11 @@ var myScrollFunc = function () {
     }
 
     if (y >= 3100) {        
-        mobile_link.classList.remove("mobile_link_hide");
+        mobile_link.classList.remove("mobile_link_show");
+        mobile_link.classList.add("mobile_link_hide");
     } else {                
-        mobile_link.classList.add("mobile_link_hide");       
+        mobile_link.classList.add("mobile_link_show");
+        mobile_link.classList.remove("mobile_link_hide");       
     }
 };
 
