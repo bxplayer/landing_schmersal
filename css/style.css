@@ -292,10 +292,7 @@ footer a{
 
 @media (min-width: 268px) and (max-width: 576px) {
 
-    .trabajo{
-        width: 250px;
-        height: 250px;
-    }
+
     .mobile_link_show{
         display: block;
     }
