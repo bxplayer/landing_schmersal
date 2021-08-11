@@ -206,8 +206,12 @@ main{
 
 
 
-.whatsapp_fixed{
-    
+
+.mobile_link{
+    display: none;
+}
+
+.whatsapp_fixed{    
     position: fixed;    
 }
 
@@ -287,6 +291,27 @@ footer a{
 
 
 @media (max-width: 576px) {
+
+    .mobile_link_hide{
+        display: inline;
+    }
+
+    .mobile_link{                
+        position: fixed;
+        bottom: 30px;
+        right: 0px;
+        z-index: 120;
+    }
+
+    .mobile_link img{
+        width: 70%;
+    }
+
+    .whatsapp_fixed{    
+        position: relative;    
+    }
+    
+
     .card{        
         width: 99%;         
     }
