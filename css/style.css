@@ -16,7 +16,7 @@ body{
 main{
     background: rgb(234,234,234);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 28%);
-    z-index: 10;      
+    z-index: 10;
 }
 
 .container-fluid{
@@ -26,10 +26,10 @@ main{
 
 /*Formulario*/
 .formulario{
-    min-height: 750px;    
+    min-height: 750px;
 }
 
-.form-control:focus {        
+.form-control:focus {
     border-color: rgba(153, 153, 153, 0.25);
     outline: 0;
     box-shadow: 0 0 0 0.08rem rgba(153, 153, 153, 0.25);
@@ -40,8 +40,8 @@ main{
 }
 
 
-.card{             
-    width: 450px;         
+.card{
+    width: 450px;
 }
 
 .card-title{
@@ -59,13 +59,13 @@ main{
 .form-select ,.form-control , .input-group-text{
     background-color: var(--background-form);
     color:var(--color-text-form);
-    height: 45px;    
-    margin-top: 20px;    
+    height: 45px;
+    margin-top: 20px;
 }
 
 .form-select, .form-control{
     border-left: none;
-    padding-left: 8px;    
+    padding-left: 8px;
     font-size: 1rem;
     color: var(--color-text-form);
 }
@@ -86,7 +86,7 @@ main{
 }
 
 .lema-dinatecnica p,.distribuidor-oficial p,.productos-schmersal p,.top-carousel p{
-    font-size: 2rem;  
+    font-size: 2rem;
 }
 
 
@@ -111,7 +111,7 @@ main{
 
 
 .lema-dinatecnica p{
-    color:#4371B0;    
+    color:#4371B0;
 }
 
 .lema-dinatecnica p b{
@@ -123,7 +123,7 @@ main{
 
 .logo-dinatecnica img{
     max-width: 505px;
-    max-height: 90px;        
+    max-height: 90px;
 }
 
 
@@ -162,7 +162,7 @@ main{
 
 #carousel_bottom .carousel-item, #carousel_bottom .carousel-item img{
     height: 830px;
-    width: 99vw;    
+    width: 99vw;
 }
 
 .carousel-caption{
@@ -211,8 +211,8 @@ main{
     display: none;
 }
 
-.whatsapp_fixed{    
-    position: fixed;    
+.whatsapp_fixed{
+    position: fixed;
 }
 
 
@@ -223,8 +223,8 @@ main{
     border-radius: 5px;
     padding: 25px;
     width: 310px;
-    height: 324px;    
-    z-index: 99;        
+    height: 324px;
+    z-index: 99;
 }
 
 
@@ -237,7 +237,7 @@ main{
 }
 
 .whatsapp h3 i{
-    margin-right: 12px;    
+    margin-right: 12px;
     font-size: 2.4rem;
 }
 .whatsapp label{
@@ -292,11 +292,11 @@ footer a{
 
 @media (min-width: 268px) and (max-width: 576px) {
 
-    .mobile_link_hide{
+    /* .mobile_link_hide{
         display: inline;
     }
 
-    .mobile_link{                
+    .mobile_link{
         position: fixed;
         bottom: 30px;
         right: 0px;
@@ -305,39 +305,39 @@ footer a{
 
     .mobile_link img{
         width: 70%;
+    } */
+
+    .whatsapp_fixed{
+        position: relative;
     }
 
-    .whatsapp_fixed{    
-        position: relative;    
-    }
-    
 
-    .card{        
-        width: 99%;         
+    .card{
+        width: 99%;
     }
 
-    .lema-dinatecnica p,.distribuidor-oficial p,.productos-schmersal p,.top-carousel p {        
+    .lema-dinatecnica p,.distribuidor-oficial p,.productos-schmersal p,.top-carousel p {
         font-size: 1.8rem;
     }
- 
+
     #carousel_bottom .carousel-item, #carousel_bottom .carousel-item img{
         height: 230px;
         width: 99vw;
     }
 
-    .carousel-caption{  
+    .carousel-caption{
         top : 60%;
-        padding: 2%;      
+        padding: 2%;
         height: 85px;
         padding-left: 20px;
         left:5%;
         background-color: rgba(0,0,0,57%);
     }
-    
+
     .carousel-caption h2{
         font-size: 1.4rem;
     }
-    
+
     .carousel-caption p{
         font-size: 1rem;
         font-weight: 200;
@@ -347,14 +347,14 @@ footer a{
   }
 
   @media (min-width: 768px)  and  (max-width: 991px) {
-    .card{ width: 99%; }     
+    .card{ width: 99%; }
 
     .lema-dinatecnica p,.distribuidor-oficial p,.productos-schmersal p,.top-carousel p{
         font-size: 1.60rem;
     }
-    .contactanos  h2{ 
+    .contactanos  h2{
         font-size: 2.0rem;
-    }    
+    }
     .contactanos  p{
         font-weight: 400;
         font-size: 1rem;
@@ -362,17 +362,17 @@ footer a{
   }
 
   @media (min-width:992px){
-  
-    .logo-check{ 
+
+    .logo-check{
         height: 140px;
     }
-    #carousel_bottom .carousel-item, #carousel_bottom .carousel-item img{ 
+    #carousel_bottom .carousel-item, #carousel_bottom .carousel-item img{
         height: 600px;
     }
 
-    .lema-dinatecnica p,.distribuidor-oficial p,.productos-schmersal p,.top-carousel p{ 
+    .lema-dinatecnica p,.distribuidor-oficial p,.productos-schmersal p,.top-carousel p{
         font-size: 1.75rem;
-    }    
+    }
   }
 
   @media (min-width:1800px){
