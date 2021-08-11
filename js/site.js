@@ -13,12 +13,13 @@ let motivo = document.getElementById("motivo");
 
 let IdEvento = document.getElementById("IdEvento");
 let IdSector = document.getElementById("IdSector");
-let IdProfesion = document.getElementById("IdProfesion");
+let IdProfesion = document.getElementById("profesion");
 let IdContactoR2 = document.getElementById("IdContactoR2");
 let Tipo = document.getElementById("Tipo");
 let Oid = document.getElementById("Oid");
 let Chekin = document.getElementById("Chekin");
 let ts = document.getElementById("ts");
+let rubro = document.getElementById("rubro");
 
 
 
@@ -42,17 +43,15 @@ let buscar_mail = () => {
 				setSelectedValue(cargo, parseInt(res.IdCargo));
                 celular.value = res.Celular;
                 motivo.value = (res.Motivo == null)?0:res.Motivo;
-
-
+                
 				IdSector.value = res.IdSector;                
-				IdProfesion.value = res.IdProfesion;				            
+				IdProfesion.value = res.Profesion;				            
                 IdContactoR2.value = res.IdContactoR2;
                 rubro.value = res.IdRubro;
 				Tipo.value = res.Tipo;
 				Oid.value = res.Oid;
 				Chekin.value = res.Chekin;
 				ts.value = res.ts;
-
 
             }
 
@@ -97,3 +96,15 @@ btn_submit.addEventListener('click', () => {
     })
 
 })
+
+
+
+
+var url = new URL(window.location.href);
+var exito = url.searchParams.get("exito");
+
+if(exito){
+    let modal = new bootstrap.Modal(document.getElementById("modal"));
+
+    modal.show();
+}

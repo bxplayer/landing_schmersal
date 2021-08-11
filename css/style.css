@@ -267,6 +267,13 @@ footer a{
 }
 /* Fin FOOTER*/
 
+
+/*Modal*/
+.modal-body{
+    font-weight: 400;
+}
+
+
 @media (max-width: 576px) {
     .card{        
         width: 99%;         
