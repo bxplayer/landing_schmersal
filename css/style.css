@@ -289,6 +289,23 @@ footer a{
     font-weight: 400;
 }
 
+@media (min-width: 576px) {
+    .mobile_link_hide{
+        display: inline;
+    }
+
+    .mobile_link{                
+        position: fixed;
+        bottom: 30px;
+        right: 0px;
+        z-index: 120;
+    }
+
+    .mobile_link img{
+        width: 70%;
+    }
+
+ }
 
 @media (max-width: 576px) {
 
