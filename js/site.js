@@ -114,14 +114,22 @@ if(exito){
 
 
 let myID = document.getElementById("whatsapp");
+let mobile_link = document.getElementById("mobile_link");
 
 var myScrollFunc = function () {
     var y = window.scrollY;
     if (y >= 2200) {
-        myID.classList.remove("whatsapp_fixed");        
-       
+        myID.classList.remove("whatsapp_fixed");                
     } else {        
-        myID.classList.add("whatsapp_fixed");        
+        myID.classList.add("whatsapp_fixed");         
+    }
+
+    if (y >= 3100) {        
+        mobile_link.classList.remove("mobile_link_show");
+        mobile_link.classList.add("mobile_link_hide");
+    } else {                
+        mobile_link.classList.add("mobile_link_show");
+        mobile_link.classList.remove("mobile_link_hide");       
     }
 };
 
