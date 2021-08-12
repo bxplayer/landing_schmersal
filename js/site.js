@@ -42,7 +42,7 @@ let buscar_mail = () => {
 				empresa.value = res.Empresa;
 				setSelectedValue(cargo, parseInt(res.IdCargo));
                 celular.value = res.Celular;
-                motivo.value = (res.Motivo == null)?0:res.Motivo;
+                motivo.value = (res.Motivo == null)?"":res.Motivo;
                 
 				IdSector.value = res.IdSector;                
 				IdProfesion.value = res.Profesion;				            
@@ -75,7 +75,7 @@ function setSelectedValue(selectObj, valueToSet) {
 }
 
 
-btn_submit.addEventListener('click', () => {
+btn_submit.addEventListener('click', (e) => {
 
     let submit_form = true;
     let elemetos_validacion = document.querySelectorAll("input[type=text],input[type=email],select");
@@ -84,17 +84,17 @@ btn_submit.addEventListener('click', () => {
         if(x.hasAttribute("required") && (x.value == "" || x.value == "0") ){
             submit_form = false;
             x.nextElementSibling.style.display = 'block';            
-            x.nextElementSibling.textContent = `El campo ${x.getAttribute("placeholder")} es requerido.`;
+            x.nextElementSibling.textContent = `El campo ${x.getAttribute("placeholder")} es requerido.`;            
         }else{
             x.nextElementSibling.style.display = 'none';
-        }
-
-        if(submit_form)
-        {
-            document.getElementById("form").submit()
         }        
     })
 
+    if(submit_form)
+    {       
+      document.getElementById("form").submit()
+    }
+   
 })
 
 
